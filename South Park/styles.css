@@ -1,0 +1,251 @@
+* {
+    position: relative;
+    margin: 0 0;
+
+}
+
+body {
+    font-family: Arial, Tahoma, Serif;
+    color: #fffffb;
+    background-color: #f8f8f8;
+  }
+
+header {
+    margin-left: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+  }
+  
+#li_episodes {
+    margin-left: 700px;
+}
+
+#li_episodes, #li_about, #li_icon, #li_search {
+    padding-left: 1.5rem; /* Esto da espacio entre palabras */
+  }
+
+#li_title {
+margin-left: -25px;
+height: 18px;
+width: 216px;
+margin-right: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+ul li a {
+    color:#ffffff;       
+    transition: color 0.5s linear; /* vendorless fallback */
+    -o-transition: color 0.5s linear; /* opera */
+    -ms-transition: color 0.5s linear; /* IE 10 */
+    -moz-transition: color 0.5s linear; /* Firefox */
+    -webkit-transition: color 0.5s linear; /*safari and chrome */
+}
+
+ul li a:hover {
+    color:#FFCC00;
+    cursor: pointer;
+}
+
+#li_title{
+    transition: transform .2s;
+    margin:0 auto;
+}
+#li_title:hover{
+    transform:scale(1.05);
+}
+
+
+.h1_container {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 23px;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+    max-width: 1100px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+#play {
+    font-size: 35px;
+}
+
+h1 {
+    color:#FFCC00;       
+    transition: color 0.1s linear; /* vendorless fallback */
+    -o-transition: color 0.1s linear; /* opera */
+    -ms-transition: color 0.1s linear; /* IE 10 */
+    -moz-transition: color 0.1s linear; /* Firefox */
+    -webkit-transition: color 0.1s linear; /*safari and chrome */
+}
+
+h1:hover {
+    color:#FFFFFF;
+    cursor: pointer;
+}
+
+.button_container {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: #d3d3d3;
+    font-weight: bold;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#down {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.chapter1_container {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0 23px 0 23px;
+    max-width: 971px;
+    min-height: 372px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#chapter1_img {
+    max-width: 660px;
+    min-height: 372px;
+    text-align: left;
+    margin-left: -23px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#chapter1_content {
+    margin-left: auto; 
+    margin-right: -23px;
+    background-color: #ffffff;
+    width: 971px;
+    height: 372px;
+}
+
+h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: black;
+    font-size: 15.5px;
+    
+}
+
+#chapter1_text {
+    padding: 30px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-left: 10px;
+    text-orientation: upright;
+}
+
+#general_container {
+padding-top: 40px;
+margin: 0 auto;
+width: 1017px;
+}
+
+#all_chapters_container {
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 25px; 
+}
+
+/* Separate chapters */
+
+.chapter {
+    margin: 0 auto;
+    height: 425px;
+    width: 327px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#chapter2_img {
+    max-width: 327px;
+    max-height: 430px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#chapter2_text {
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-left: 10px;
+    text-orientation: upright;
+}
+
+.zoom {
+    transition: transform .1s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.04); 
+}
+
+.zoom1 {
+    transition: transform 0.1s; /* Animation */
+  }
+  
+  .zoom1:hover {
+    transform: scale(1.1); 
+}
